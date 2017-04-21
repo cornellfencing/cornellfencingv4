@@ -28,7 +28,7 @@ git remote add origin https://github.com/cornellfencing/cornellfencing.github.io
 
 #### Confirm!
 ```
-git pull origin master
+git pull origin dev
 ```
 ^^ This should return a message saying your changes are up to date.
 
@@ -71,9 +71,9 @@ This page uses a lot of out-of-the-box js libraries that I didn't really make an
 
 ## Commit / Push
 ```
-git pull origin master
+git pull origin dev
 git commit -m "Your commit message"
-git push my-fork your_branch
+git push my-fork dev
 ```
 
 Once you've done that, make a pull request to the cornellfencing/cornellfencing.github.io repo for review.

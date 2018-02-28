@@ -8,7 +8,7 @@ Stylesheets were shamelessly scraped from http://www.styleshout.com/
 
 ## Editing
 ### Seeing Your Changes
-We use Node.js to run a local dev server. [Install Node.js from the official website.](https://nodejs.org/en/) Get version 7.x.
+We use Node.js to run a local dev server. [Install Node.js from the official website.](https://nodejs.org/en/) Get the LTS version.
 
 In the directory for this project:
 
@@ -33,18 +33,19 @@ Go to the URL listed in the output (`http://0.0.0.0:8080` in the example above) 
 All CSS overrides beyond the defaults should be made in `app/css/layouts.css`.  The other CSS files shouldn't need to be touched unless you very explicitly know what you're doing.
 
 ### Adding Images
-Dump all new image assets in the `app/images` directory and source them in index.html.  For something like adding images to the scrolling hero image, add the image URL in the format in `app/css/layouts.css` (under '0. Alumni Hero Banner Images'), and then add the relevant id to the index.html file.  Search "team-2015" if you're looking for an example in that file.  
+Dump all new image assets in the `app/images` directory and source them in index.html.  For something like adding images to the scrolling hero image, add the image URL in the format in `app/css/layouts.css` (under `0. Alumni Hero Banner Images`), and then add the relevant id to the index.html file.  Search "team-2015" if you're looking for an example in that file.  
 
 ### JS changes
 This page uses a lot of out-of-the-box js libraries that I didn't really make any effort to change.  Nearly of the javascript-based behavior of the page is powered by [Foundation Zurb](https://foundation.zurb.com), and secondarily supported by jquery.  If you're looking to change the JS on your own, no groundwork has really been laid out for you, so please follow general best practices and try not to make a mess.
 
 ## Submitting changes
-First check your commits with diff and status
+First, check your commits with diff and status:
 ```
 git diff
 git status
 ```
 
+Then, submit your changes for review:
 ```
 git branch your-name/feature-name
 git commit -am "Your commit message"
